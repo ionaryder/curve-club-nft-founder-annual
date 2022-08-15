@@ -105,9 +105,9 @@ describe("CurveFoundv1", function () {
     console.log(`Your membership expires in ${timeTilExpire} seconds!`);
 
     // fast forward time by 5 years
-    await network.provider.send("evm_increaseTime", [157680000]);
+    await network.provider.send("evm_increaseTime", [0.0000001577]);
     await network.provider.send("evm_mine");
-    console.log("Time fast forward by 5 years");
+    console.log("Time fast forward by 6 months");
 
     // check how long member again
     howLongMember = await curveNFT.connect(buyerAddress).howLongMember(buyerAddress.address);
