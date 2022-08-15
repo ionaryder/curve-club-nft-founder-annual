@@ -130,7 +130,7 @@ contract CurveAnnualFounding is ERC721URIStorage, Ownable, ReentrancyGuard {
         if (msg.sender != owner()){
 
             require(
-            (dateMinted[msg.sender] + 10 * 365 * 24 * 60 * 60) > block.timestamp,
+            (dateMinted[msg.sender] + (365 * 24 * 60 * 60)) > block.timestamp, //1 year 
             "Your membership has expired"
         );
         _;
@@ -161,7 +161,7 @@ contract CurveAnnualFounding is ERC721URIStorage, Ownable, ReentrancyGuard {
         if (msg.sender == tokenHolder || msg.sender == owner()){
             if (dateMinted[msg.sender] > 0) {
                 timeLeft =
-                    (dateMinted[tokenHolder] + 10 * 365 * 24 * 60 * 60) -
+                    (dateMinted[tokenHolder] + (1 * 365 * 24 * 60 * 60)) -
                     block.timestamp;
                 return timeLeft;
             }

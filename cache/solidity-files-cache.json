@@ -515,8 +515,8 @@
       ]
     },
     "/Users/ionaryder/Documents/GitHub/curve-club-nft-founder-annual/contracts/CurveFoundv1.sol": {
-      "lastModificationDate": 1660576725008,
-      "contentHash": "3c7c7bbeb53fefa4bd0c46eacbf53377",
+      "lastModificationDate": 1660580656462,
+      "contentHash": "1ce6e0818b4874730d50a490a5bb2f76",
       "sourceName": "contracts/CurveFoundv1.sol",
       "solcConfig": {
         "version": "0.8.1",

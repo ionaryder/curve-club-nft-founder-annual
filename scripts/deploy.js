@@ -2,9 +2,9 @@ const hre = require("hardhat");
 
 async function main() {
   const [owner, buyerAddress1] = await hre.ethers.getSigners();
-  const CurveFoundv1 = await hre.ethers.getContractFactory("CurveFoundv1");
+  const CurveFoundv1 = await hre.ethers.getContractFactory("CurveAnnualFounding");
   const curveFoundv1 = await CurveFoundv1.deploy(
-    "CurveClub",
+    "Curve Club Annual",
     "CC",
     "QmPoVrETjJtPqvjae38aPJkQGhS26v6QYSapNNtLcyEoFy",
     "ipfs://QmZQph5Wv8mvzcQGnHgcPFzkfLAF7vADsnJ4nbuN8yfXRT"
